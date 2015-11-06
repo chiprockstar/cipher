@@ -19,7 +19,7 @@ The Caeser Cipher was used for some messages from Julius Caesar that were sent a
 Your task is to create a simple shift cipher like the Caesar Cipher. This image is a great example of the Caesar Cipher: Caesar Cipher
 
 Here are some examples:
-```
+```ruby
     @cipher = Cipher.new
     @cipher.encode("iamapandabear") #=> "ldpdsdqgdehdu"
     @cipher.decode("ldpdsdqgdehdu") #=> "iamapandabear"
@@ -30,7 +30,7 @@ Step 2
 Shift ciphers are no fun though when your kid sister figures it out. Try amending the code to allow us to specify a key and use that for the shift distance. This is called a substitution cipher.
 
 Here's an example:
-```
+```ruby
     @cipher = Cipher.new("aaaaaaaaaaaaaaaaaa")
     @cipher.encode("iamapandabear") #=> "iamapandabear"
     @cipher = Cipher.new("ddddddddddddddddd")
@@ -48,7 +48,7 @@ If someone doesn't submit a key at all, generate a truly random key of at least 
 If the key submitted has capital letters or numbers, throw an ArgumentError with a message to that effect.
 
 Some examples:
-```
+```ruby
     @cipher = Cipher.new
     @cipher.key #=> "duxrceqyaimciuucnelkeoxjhdyduucpmrxmaivacmybmsdrzwqxvbxsygzsabdjmdjabeorttiwinfrpmpogvabiofqexnohrqu"
     
